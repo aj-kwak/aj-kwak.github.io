@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta content="This design is stitched up by me" name="A J. Kwak" />
+    <!-- Code icons created by Freepik - Flaticon -->
+		<link href="./code-signs.png" rel="icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Tailwind Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <title>JS Webpage</title>
+  </head>
+  <body class="text-gray-800 antialiased">
+    <!-- Navigation -->
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg"
+    >
+      <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <!-- Nav Left Side -->
+        <div
+          class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <a
+            class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
+            href="./portfolio.html"
+          >
+            <!-- Nav Title -->
+            BACK TO THREADS
+          </a>
+          <!-- Hamburger Menu (Mobile) -->
+          <button
+            class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <!-- Icon -->
+           <!-- <i class="text-white fas fa-bars"></i> -->
+          </button>
+        </div>
+          <!-- Nav Right Side -->
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <!-- Social Media Button -->
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#pablo"
+              >
+                <!-- Icon -->
+                <i
+                  class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg"
+                ></i>
+                <span class="lg:hidden inline-block ml-2">Tweet</span>
+              </a>
+            </li>
+            <!-- Social Media Button -->
+            <li class="flex items-center">
+              <a
+                class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                href="#pablo"
+              >
+                <!-- Icon -->
+                <i
+                  class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg"
+                ></i>
+                <span class="lg:hidden inline-block ml-2">Star</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navigation -->
+
+    <!-- Splash Page -->
+    <main>
+      <div
+        class="relative pt-16 pb-32 flex content-center items-center justify-center"
+        style="min-height: 75vh"
+      >
+        <!-- Background Image -->
+        <div
+          class="absolute top-0 w-full h-full bg-center bg-cover"
+          style="
+            background-image: url('https://images.pexels.com/photos/5952651/pexels-photo-5952651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+          "
+        >
+          <!-- Overlay -->
+          <span
+            id="blackOverlay"
+            class="w-full h-full absolute opacity-75 bg-black"
+          ></span>
+        </div>
+        <!-- Text Over Main Background -->
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap">
+            <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+              <div class="pr-12">
+                <h1
+                  class="text-white font-semibold text-5xl"
+                  data-aos="fade-up"
+                >
+                  Welcome your epiphany.
+                </h1>
+                <p
+                  class="mt-4 text-lg text-gray-300"
+                  data-aos="fade-right"
+                  data-aos-delay="1000"
+                >
+                  Focus on modern coding techniques and smooth user experience!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Making Polygon Shape in Background -->
+        <div
+          class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+          style="height: 70px; transform: translateZ(0)"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-300 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+      </div>
+      <!-- End of Splash Page -->
+
+      <!-- Services Section -->
+      <section class="pb-20 bg-gray-300 -mt-24">
+        <!-- 3 Card Section -->
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <!-- Card -->
+            <div
+              class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center"
+              data-aos="fade-right"
+              data-aos-delay="1200"
+            >
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
+                  >
+                    <!-- Icon -->
+                    <i class="fas fa-robot"></i>
+                  </div>
+                  <!-- Text Box -->
+                  <h6 class="text-xl font-semibold">CDN Sources</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Using Content Delivery Network -Link to export the web template from open-source library of static web templates to kickstart this webpage in minutes!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card -->
+            <div
+              class="w-full md:w-4/12 px-4 text-center"
+              data-aos="fade-up"
+              data-aos-delay="1400"
+            >
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
+                  >
+                    <!-- Icon -->
+                    <i class="fas fa-atom"></i>
+                  </div>
+                  <!-- Text Box -->
+                  <h6 class="text-xl font-semibold">In This Case</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Because our JavaScript on this page is very minimal, only a few lines. Everything is contained into a single HTML -file, using "Animate On Scroll Library".
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Card -->
+            <div
+              class="pt-6 w-full md:w-4/12 px-4 text-center"
+              data-aos="fade-left"
+              data-aos-delay="1600"
+            >
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg"
+              >
+                <div class="px-4 py-5 flex-auto">
+                  <div
+                    class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
+                  >
+                    <!-- Icon -->
+                    <i class="fas fa-bolt"></i>
+                  </div>
+                  <!-- Text Box -->
+                  <h6 class="text-xl font-semibold">Loading Scripts</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    If a third-party script is slowing down the page load. This can be fixed by loading the script using async or defer attribute to avoid blocking document parsing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text Box and Card Container -->
+          <div class="flex flex-wrap items-center mt-32">
+            <!-- Text Box Container -->
+            <div
+              class="w-full md:w-5/12 px-4 mr-auto ml-auto"
+              data-aos="zoom-in-right"
+            >
+              <!-- Text Box -->
+              <div
+                class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
+              >
+                <!-- Icon -->
+                <i class="fas fa-star text-xl"></i>
+              </div>
+              <h3 class="text-3xl mb-2 font-semibold leading-normal">
+                Trying New Things is Great!
+              </h3>
+              <p
+                class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
+              >
+              A big part of being a developer is being able to know; Which is the best tool for the job.
+              </p>
+              <p
+                class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
+              >
+              Usually, it's more efficient finding open-source code libraries that already exist, rather than creating your own.
+              <a
+                a target="_blank" href="https://michalsnik.github.io/aos/"
+                class="font-bold text-gray-800 mt-8"
+                ><br><br>Using "Animate On Scroll Library" To Create Animations On This Page!
+              </a>
+            </div>
+
+            <!-- Image Cap & Text Card -->
+            <div
+              class="w-full md:w-4/12 px-4 mr-auto ml-auto"
+              data-aos="flip-left"
+              data-aos-delay="1000"
+            >
+              <div
+                class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500"
+              >
+                <!-- Image -->
+                <img
+                  alt="..."
+                  src="https://cdn.pixabay.com/photo/2019/04/24/23/53/robot-4153544_960_720.png"
+                  class="w-full align-middle rounded-t-lg"
+                />
+                <blockquote class="relative p-8 mb-4">
+                  <!-- Making Polygon Shape in Card -->
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px"
+                  >
+                    <polygon
+                      points="-30,95 583,95 583,65"
+                      class="text-orange-500 fill-current"
+                    ></polygon>
+                  </svg>
+                  <!-- Text Box -->
+                  <h4 class="text-xl font-bold text-white">
+                    Coding Paradox
+                  </h4>
+                  <p class="text-md font-light mt-2 text-white">
+                    “Any code of your own that you haven’t looked at for six or more months might as well have been written by someone else.”<br> — Eagleson’s Law
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of Services Section -->
+
+      <!-- About Section -->
+      <section class="relative py-20">
+        <!-- Making Polygon Shape in Background -->
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px; transform: translateZ(0)"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-white fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <!-- Section Container -->
+        <div class="container mx-auto px-4">
+          <div class="items-center flex flex-wrap">
+            <div
+              class="w-full md:w-4/12 ml-auto mr-auto px-4"
+              data-aos="flip-right"
+              data-aos-delay="1000"
+            >
+              <!-- Image -->
+              <img
+                alt="..."
+                class="max-w-full rounded-lg shadow-lg"
+                src="https://images.pexels.com/photos/5496464/pexels-photo-5496464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              />
+            </div>
+            <!-- Text Box Container-->
+            <div
+              class="w-full md:w-5/12 ml-auto mr-auto px-4"
+              data-aos="zoom-in-left"
+            >
+              <div class="md:pr-12">
+                <div
+                  class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300"
+                >
+                  <!-- Icon -->
+                  <i class="fas fa-rocket text-xl"></i>
+                </div>
+                <!-- Text Box -->
+                <h3 class="text-3xl font-semibold">A growing company</h3>
+                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                  Collaboration with other developers provide an in-depth overall knowledge while creating a project from start til the end.
+                </p>
+                <!-- List -->
+                <ul class="list-none mt-6">
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                        >
+                          <!-- Icon -->
+                          <i class="fas fa-fingerprint"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">
+                          Carefully crafted blueprint
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                        >
+                          <!-- Icon -->
+                          <i class="fab fa-html5"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">Amazing user experience</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-200 mr-3"
+                        >
+                          <!-- Icon -->
+                          <i class="far fa-paper-plane"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="text-gray-600">Dynamic components</h4>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of About Section -->
+
+      <!-- Developer Section -->
+      <section class="pt-20 pb-48">
+        <!-- Section Container -->
+        <div class="container mx-auto px-4">
+          <!-- Text Box -->
+          <div class="flex flex-wrap justify-center text-center mb-24">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold">The Developer</h2>
+              <p class="text-lg leading-relaxed m-4 text-gray-600">
+                South-Eastern Finland University of Applied Sciences
+              </p>
+            </div>
+          </div>
+          <!-- Flex Row Container -->
+          <div class="flex flex-wrap">
+            <!-- Item -->
+            <div
+              class="w-full md:w-12/12 lg:w-12/12 lg:mb-0 mb-12 px-4"
+              data-aos="fade-in"
+            >
+              <div class="px-6">
+                <!-- Image -->
+                <img
+                  alt="..."
+                  src="./developer2.png"
+                  class="shadow-lg rounded-full max-w-full mx-auto"
+                  style="max-width: 120px"
+                />
+                <div class="pt-6 text-center">
+                  <h5 class="text-xl font-bold">A J. Kwak</h5>
+                  <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                    Pseudonymous Web Developer
+                    <br>Web3 / Cryptocurrency Expert
+                  </p>
+                  <!-- Social Media Buttons -->
+                  <div class="mt-6">
+                    <button
+                      class="bg-blue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button"
+                    >
+                      <!-- Icon 
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button
+                      class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                      type="button" -->
+                    
+                      <!-- Icon -->
+                      <i class="fab fa-github"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+        </div>
+      </section>
+      <!-- End of Devloper Section -->
+
+      <!-- Contact Section -->
+      <section class="pb-20 relative block bg-gray-900">
+        <!-- Making Polygon Shape in Background -->
+        <div
+          class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+          style="height: 80px; transform: translateZ(0)"
+        >
+          <svg
+            class="absolute bottom-0 overflow-hidden"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            version="1.1"
+            viewBox="0 0 2560 100"
+            x="0"
+            y="0"
+          >
+            <polygon
+              class="text-gray-900 fill-current"
+              points="2560 0 2560 100 0 100"
+            ></polygon>
+          </svg>
+        </div>
+        <!-- Section Container -->
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+          <!-- Text Box -->
+          <div class="flex flex-wrap text-center justify-center">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold text-white">Build something</h2>
+              <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+                Building something with us, results into a well-functioning application with an easy-to-use interface. We plan the product through our user's eyes.
+              </p>
+            </div>
+          </div>
+          <!-- Flex Row Container -->
+          <div class="flex flex-wrap mt-12 justify-center">
+            <!-- Item -->
+            <div
+              class="w-full lg:w-3/12 px-4 text-center"
+              data-aos="fade-in"
+              data-aos-delay="600"
+            >
+              <div
+                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
+              >
+                <!-- Icon -->
+                <i class="fas fa-medal text-xl"></i>
+              </div>
+              <!-- Text Box -->
+              <h5 class="text-xl mt-5 font-semibold text-white">
+                Excelent Services
+              </h5>
+              <p class="mt-2 mb-4 text-gray-500">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <!-- Item -->
+            <div
+              class="w-full lg:w-3/12 px-4 text-center"
+              data-aos="fade-in"
+              data-aos-delay="400"
+            >
+              <div
+                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
+              >
+                <!-- Icon -->
+                <i class="fas fa-poll text-xl"></i>
+              </div>
+              <!-- Text Box -->
+              <h5 class="text-xl mt-5 font-semibold text-white">
+                Grow your market
+              </h5>
+              <p class="mt-2 mb-4 text-gray-500">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <!-- Item -->
+            <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in">
+              <div
+                class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center"
+              >
+                <!-- Icon -->
+                <i class="fas fa-lightbulb text-xl"></i>
+              </div>
+              <!-- Text Box -->
+              <h5 class="text-xl mt-5 font-semibold text-white">Launch time</h5>
+              <p class="mt-2 mb-4 text-gray-500">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+      <!-- Making Polygon Shape in Background -->
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px; transform: translateZ(0)"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <!-- Section Container -->
+      <div class="container mx-auto px-4">
+        <!-- Text Box Container -->
+        <div class="flex flex-wrap">
+          <div class="w-full lg:w-6/12 px-4">
+            <h4 class="text-3xl font-semibold"> Set your minds on things above</h4>
+            <h5 class="text-lg mt-0 mb-2 text-gray-700">
+              ...not on earthly things.
+            </h5>
+            <!-- Social Media Buttons -->
+            <div class="mt-6">
+              <!--<a href="" target="_blank"
+                ><i
+                  class="fab fa-twitter bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"
+                ></i
+              ></a>-->
+              <a
+                href=""
+                target="_blank"
+                ><i
+                  class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"
+                ></i
+              ></a>
+            </div>
+          </div>
+          <!-- List Container -->
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="flex flex-wrap items-top mb-6">
+              <!-- List 1 -->
+              <div class="w-full lg:w-4/12 px-4 ml-auto">
+                <span
+                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  >Useful Links</span
+                >
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href=""
+                      >About Us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href=""
+                      >Blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href=""
+                      >Github</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- List 2 -->
+              <div class="w-full lg:w-4/12 px-4">
+                <span
+                  class="block uppercase text-gray-600 text-sm font-semibold mb-2"
+                  >Resources</span
+                >
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href="https://en.wikipedia.org/wiki/MIT_License"
+                      >MIT License</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href=""
+                      >Terms &amp; Conditions</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      href=""
+                      >Privacy Policy</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Line Break -->
+        <hr class="my-6 border-gray-400" />
+        <!-- Footer Text -->
+        <div
+          class="flex flex-wrap items-center md:justify-between justify-center"
+        >
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-sm text-gray-600 font-semibold py-1">
+              © Web Portfolio | Documentation
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer Section -->
+  </body>
+  <!-- AOS.js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // AOS.init();
+    AOS.init({
+      delay: 200, // values from 0 to 3000, with step 50ms
+      duration: 1500, // values from 0 to 3000, with step 50ms
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+    });
+  </script>
+  <!-- Navigation Script -->
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+</html>

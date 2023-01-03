@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="This design is stitched up by me" name="A J. Kwak" />
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png" />
+		<!-- Code icons created by Freepik - Flaticon -->
+		<link href="./code-signs.png" rel="icon" />
+
+  <title>BEP-20 Token Contract</title>  
+
+<link href="./style.css" rel="stylesheet"></head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Header content -->
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-default">
+    <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav ">
+          <li><a href="./index.html" title="">01 : Introduction</a></li>
+          <li><a href="./web3.html" title="" class="active">02 : Web3 Projects</a></li>
+          <li><a href="./portfolio.html" title="">03 : Web Portfolio</a></li>
+        </ul>
+      </div> 
+    </div>
+  </nav>
+</header>
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="./work001-01.jpg" class="img-responsive" alt="">
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">002 : Deploying A BEP-20 Token On BSC</h1>
+          </div>
+          <p>
+            The following token contract is set available for download at the end of this thread. It contains functions such as; Auto-liquitity Mechanism, Marketing Tax, Bonus Tokens, Anti-rug, and Anti-whale mechanisms. By taking the steps in this thread, you can get a BEP-20 token contract including interesting tokenomics deployed to the BSC.
+          <br><br>
+          This token contract development was inspired by a mini YouTube video -series on "How to Make a BEP-20 Token with Tokenomics and deploy it on the BCS". While reading the comments, I noticed a lot of viewers demanding advice on; how to change the marketing fee to BNB instead of receiving this fee in the form of native token.
+          <br><br>
+          This request makes sense, as who would want to dump native tokens on project supporters, right? The main difference between this smart contract versus the gcoach token contract; is the way fees are handled and, *IMPORTANT* in this contract marketing fee is received in BNB instead of "yourOwnToken".
+          <br><br>
+          In addition to keeping the tokenomics safe and more desirable for investors. We have added some "No-rug and Anti-whale" -functions; A maxbuywallet, capped total tax%, and no-ability to mint more tokens. As well as, bonus tokens are re-distributed to all current holders on each transaction.
+          </p>
+
+          <blockquote>
+            <p>"BEP-20 is a token standard on Binance Smart Chain that extends ERC-20, the most common Ethereum token standard."</p>
+          </blockquote>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="col-md-8 col-md-offset-2 section-container-spacer">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <img src="./gcoach-comments.png" class="img-responsive" alt="">
+            <p>This seems to be the most requested change to the contract.</p>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <img src="./smartcontract-variables.png" class="img-responsive" alt="">
+            <p>So... I declared some new variables here and there.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">       
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">About The Smart Contract</h1>
+          </div>
+          <p>
+            To be quite honest, this contract reminds me of the Safemoon contract in a way of the auto-liquidity function and bonus tokens. However, after the current additions, this contract is fair for all parties and seems way more desirable in the eyes of an investor.
+            <br><br>
+            Obviously you will need a project with the potential to back up long term sustainability. Tokenomics comes first; Bad tokenomics can break a good project, yet good tokenomics can carry a bad project. Safemoon being a great example of this - By reaching a fully diluted market cap of $550,059,263.50 on the peak of its ATH.
+            <br><br>
+            If you ask me, a fair launch would be the way to go, no reserved tokens. The marketing tax will fund the project. If set to 2%, you will receive 2% of all transactions. In practice; the token does 100k USD in daily trading volume; received tokens in BNB ~2k USD, distributed to the external marketing wallet.
+            </p>
+          <br>
+          <h5>SMART CONTRACT FUNCTIONS:</h5>
+          <ol>
+            <li>Auto-generating liquidity mechanism - A percentage of all transactions is split and transferred to the PCS liquidity pool.</li>
+            <li>Bonus Tokens - A percentage of all transactions is re-distributed to current token holders as bonus tokens.</li>
+            <li>Marketing Fee - A percentage of all transactions is distributed to your external wallet as BNB.</li>
+            <li>Anti-whale -function Maxbuywallet - won't allow wallets to buy more than a certain percentage of the total supply.</li>
+            <li>A No-rug -function - won't allow owner to mint more tokens after deployment; this way owner can't create tokens out of thin air and dump them on rest of the holders.
+          </ol>
+          <br>
+            <p>Functions limiting owner privileges are as, if not more important as the functions benefiting the investor. Limiting bad actors such as whales from entering the network. The contract has its limitations for potential bad actors on both sides of the contract. 
+            </p>
+            </div>
+            <br>
+            <br>
+            <div class="col-md-8 col-md-offset-2 section-container-spacer">
+            <div class="row">
+            <div class="col-xs-12 col-md-12">
+            <img src="./testTokenContract.png" 
+            class="img-responsive" alt="">
+            <p align="center">Download This Smart Contract At The End Of This Thread</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">       
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">Editing the Tokenomics</h1>
+          </div>
+          <p>
+            You can safely edit all lines in the contract marked with <b>//Comments</b>. Copypaste the code from the txt -file downloaded at the end of this thread, create a new solidity contract file in the <a href="https://remix.ethereum.org" target="_blank"><b>Remix Ethereum IDE</b></a>, and paste it into the editor.
+          </p>
+          <br>
+          <h5>Edit the following lines:</h5>
+          <ul>
+            <li><b>LINE: 412</b> - Change the contract name (it's not the token name or ticker, just a name for the contract set "Testing" as default).</li>
+            <li><b>LINE: 416</b> - Change Marketing address to any of your wallet address.</li>
+            <li><b> LINE: 429</b> - Change total supply here.</li>
+            <li><b>LINE: 433</b> - This is the token name.</li>
+            <li><b>LINE: 434</b> - This is the token ticker.</li>
+            <li><b>LINE: 438</b> - This is the fee to change the bonus tokens percentage... Set to 4% by default</li>
+            <li><b>LINE: 441</b> - This is the complete liquidity fee.. Set to 8 by default, what happens under the hood is this splits in two. 4% to marketing wallet and 4% to the liquidity pool.</li>
+            <li><b>LINE: 444</b> - This is the marketing fee. It is being extracted from the total liquidity fee. If you set it to 7 then the liquidity fee would be 1% and marketing would get 
+            7% out of the entire 8% liquidity fee.</li>
+            <li><b>That's all you need to edit.</b> Rest of the lines marked with //Comments are pretty self-explanatory, and mostly referring to interacting with the contract on BSC after deployment. 
+          </ul>
+          <br>
+            </p>
+            </div>
+            <br>
+            <div class="col-md-8 col-md-offset-2 section-container-spacer">
+            <div class="row">
+            <div class="col-xs-12 col-md-12">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">       
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">Deploying the Contract</h1>
+          </div>
+          <p>
+            Once set the desired tokenomics, it's time to compile the contract with the <a href="https://remix.ethereum.org" target="_blank"><b>Remix</b></a> Solidity Compiler. A few things to keep in mind; always use the correct contract/address. Make sure you are logged in to the correct Metamask. Account address must match with the one set in the contract. Also remember to use the same compiler/solidity version (0.8.13) in all steps of the process (for example while verifying the contract address on BSCscan).
+          </p>
+          <br>
+          <h5>Setting for Remix Solidity Compiler:</h5>
+          <ul>
+            <li>Set compiler version to <b>0.8.13</b>.</li>
+            <li>Set language to <b>Solidity</b>.</li>
+            <li><b>Enable Optimization</b> and set value to 200.</li>
+            <li>Open the drop-down menu and choose the "Testing" -Contract: <b> (TestToken.sol)</b>.</li>
+            <li>Move to the 4th tab: <b>"Deploy & Run Transactions"</b>.</li>
+            <li>Select Environment <b>"Injected Web3"</b>Make sure your Metamask or other Web3 wallet is open and logged in a correct account.</li>
+            <li>Open the drop-down menu and choose the "Testing" -Contract again: <b> (TestToken.sol)</b>.</li>
+            <li>Once you are ready with all previously mentioned settings, you can go and deploy your token by clicking the <b>"Deploy"</b> -Button.</li>
+          </ul>
+          <br>
+            </p>
+            </div>
+            <br>
+            <div class="col-md-8 col-md-offset-2 section-container-spacer">
+            <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <div class="text-center">
+                  <h3>
+                  <a href="https://youtu.be/3d-KwvPJDTA" target="_blank"><b>How to Add Liquidity to Your Own Token -Video</b></a>
+                  </h3>
+                  <div class="text-center">
+                  <h3>
+                  <a href="https://youtu.be/Q4xWpT349zk" target="_blank"><b>How to Verify Token Contract Address -Video</b></a>
+                  </h3>
+                  <p>Great recourses by Crypto G-Coach for Deploying the Contract on BSC.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">       
+          <div class="card-container">
+            <div class="text-center">
+            <h1 class="h2">Disclaimer</h1>
+            <p class="text-center">
+              Nothing in this thread is financial or legal advice. I do not recommend anyone to buy, sell or trade any cryptocurrencies. The Smart contract is available to download; it comes with no warranties. By no means is this thread an apt for a complete beginner; keep in mind I do not offer support in any shape or form. In order to launch a serious project; it's recommended to run a series of tests and make a security audit. Get familiar with the code, and always test your contract first on the testnet before deploying on the mainnet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">       
+        <div class="card-container">
+            <h3 align="center"><a href="https://mega.nz/file/yF5WCY4L#Fnc7DMxT_r4vfCui2vwHIUQVi02KORoLE1htzbX4Ka4" target="_blank"><b>Download This BEP-20/BSC Smart Contract Here!</b></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+
+
+
+
+
+
+
+
+<footer class="footer-container text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>© Web3 Threads | Documentation</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     navActivePage();
+  });
+</script>
+
+<script src="https://www.blockonomics.co/js/pay_button.js"></script>
+<script type="text/javascript" src="../static/main.70a66962.js"></script></body>
+
+</html>

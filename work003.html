@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="This design is stitched up by me" name="A J. Kwak" />
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png" />
+		<!-- Code icons created by Freepik - Flaticon -->
+		<link href="./code-signs.png" rel="icon" />
+
+  <title>Algorithmic Trading</title>  
+
+<link href="./style.css" rel="stylesheet"></head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+<!-- Header content -->
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-default">
+    <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav ">
+          <li><a href="./index.html" title="">01 : Introduction</a></li>
+          <li><a href="./web3.html" title="" class="active">02 : Web3 Projects</a></li>
+          <li><a href="./portfolio.html" title="">03 : Web Portfolio</a></li>
+        </ul>
+      </div> 
+    </div>
+  </nav>
+</header>
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="../work001-01.jpg" class="img-responsive" alt="">
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">003 : Algorithmic Crypto Trading </h1>
+          </div>
+          <p>
+          This relatively simple yet powerful crossover TradingView strategy created with PineScript returns an 806% ROI on backtesting, including 0.1% in trading fees. This strategy had a 57.19% win/lose ratio with stable 0.986 Sharpe Ratio, while optimized to trade Ethereum on 30 minute candle chart. Backtesting using historical exchange data included a total of 1446 trades from the past 6-month period.  </p>
+          <blockquote>
+            <p>"Cloud Hosted Crypto Trading Bot via Webhooks and Binance API."</p>
+          </blockquote>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="col-md-8 col-md-offset-2 section-container-spacer">
+        <div class="row">
+        <div class="col-xs-12 col-md-12 text-center">
+        <img src="../ocstrategysharpe.png" class="img-responsive" alt="">
+        <p>Sharpe Ratio: 0.986.</p>
+      </div>
+        <div class="col-xs-12 col-md-12 text-center">
+          <img src="./ocstratstats.png" 
+          class="img-responsive" alt="">
+          <p>Initial capital per trade: $1,000 resulted in +800% annual returns. 
+        </div>
+      </div>    
+    </div>
+  </div>
+</div>
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">       
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">Configuration</h1>
+          </div>
+          <p>
+            I built the bot as a Python flask app earlier and hosted it on Heroku. However, in this thread we shall go with a more beginner-friendly approach. We will use a third-party platform to add some extra functionality to the bot and while hosted in the cloud; the bot won't go offline whether your pc is powered on or off. 
+            </p>
+          <br>
+          <h5>REQUIREMENTS:</h5>
+          <ul>
+            <li><a href="https://www.tradingview.com/gopro/?share_your_love=t3chn1ne/" target="_blank"><b>TradingView PRO Account</b></a> (30-day free trial) to enable webhooks notification function.</li>
+            <li><a href="https://wundertrading.com/en/trader/register?ref=wwbt15c19dc7" target="_blank"><b>Wunderbit Account</b></a> (Free Plan available). This platform allows for cloud deployment. Set up bot logic, link TradigView  webhooks and Binance API.</li>
+            <li><a href="https://www.binance.com/en/activity/referral/offers/claim?ref=CPA_00KYIWIIAN/" target="_blank"><b>Binance Exchange Account</b></a> (for API connection/API keys).</li>
+            <li>And last but not least, you need a <a href="https://www.tradingview.com/script/vObmEraY-Open-Close-Cross-Strategy-R5-revised-by-JustUncleL/" target="_blank"><b>Profitable Script.</b></a></li>
+          </ul>
+          <br>
+            <p>This thread is about; on how to setup a bot with automation, not about how to adjust a script to be a profitable one. Though, here is link to the <a href="https://www.tradingview.com/script/vObmEraY-Open-Close-Cross-Strategy-R5-revised-by-JustUncleL/" target="_blank"><b>Script Used in This Thread</b></a>. This is an interesting one, while applied with valid variables within the right market conditions. Get previously displayed backtesting results by tweaking the script variables in the settings -panel for different market conditions, i.e. (uptrend / sideways / volatile) -market.  
+            <br><br>
+            However, i would highly suggest looking for scripts that don't use alternate resolution. Altered resolution can get you insane backtesting results, but may result in inaccuracy, especially on lower timeframes. This is a repaint issue; see for reference on <a href="https://youtu.be/-ZvGC0wUNAI" target="_blank"><b> Understanding and Eliminating Repainting in Pine Script</b></a>. Though, this script was profitable in a trending market with clear retracements. In choppy market - not so much. Try to get as long waves as possible while setting up the strategy. All (script / asset / timeframe) -combinations need distinctive set of rules to perform well.
+            </p>
+            </div>
+            <br>
+            <div class="col-md-8 col-md-offset-2 section-container-spacer">
+            <div class="row">
+            <div class="col-xs-12 col-md-12 text-center">
+            <img src="./StrategyVariables.png" 
+            class="img-responsive" alt="">
+            <p>These inputs can be adjusted in a user-friendly UI in the settings -panel.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">       
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">Bot Setup</h1>
+          </div>
+          <p>
+            Once created an account with TradingView, Wunderbit, and Binance. The procedure starts with adding Binance API keys to the Wunderbit Account. While signing up to Wunderbit for the first time, you will get prompted to add the Binance exchange API key. Here is: <a href="https://www.binance.com/en/support/faq/360002502072" target="_blank"><b>How to create Binance API</b></a> -tutorial. Remember to set desired permissions on the API "Edit" -panel; you want to "Enable Futures" if using Binance Futures account to trade.
+            <br><br>
+            Next up, Go to "Bots" -page on Wunderbit and click on "Add New" -button. It's where to set extra logic to your bot such as, Stop Loss, Take Profit, etc. On the right side you will see the guides on how to automate Strategy and Study -scripts. The script we use is Strategy; Therefore, <a href="https://help.wundertrading.com/en/articles/5173846-tradingview-strategy-alert-automation" target="_blank"><b>use this tutorial</b></a> to set up the automation to the bot.
+            <br><br>
+            As this script swings from long to short and vice versa; i.e. being in a trade non-stop. It is only needed to set the <b>strategy.entry long</b>, and <b>strategy.entry short -comments</b> to the script. That's about it; if followed the steps, you should have a working trading bot hosted in the cloud by now. There is a responsive support chat on Wunderbit app in a case of technical issues.
+            <br><br>
+            Note; there are thousands of community -scripts available on <a href="https://www.tradingview.com/gopro/?share_your_love=t3chn1ne/" target="_blank"><b>TradingView</b></a>. If this script doesn't suit you, pick another one. Needless to say, learning the procedure with one script increases the likelihood of successfully setting up another script with slightly variant configuration methods.
+            </div>
+            <br>
+            <div class="col-md-8 col-md-offset-2 section-container-spacer">
+            <div class="row">
+            <div class="col-xs-12 col-md-12">
+            <img src="./crypto_trading_bot_wunderbit.png" 
+            class="img-responsive" alt="">
+            <p align="center">Crypto Trading Bot Configuration @ <a href="https://wundertrading.com/en/trader/register?ref=wbt15c19dc7" target="_blank"><b>WunderTrading</b></a>
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">       
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">Disclaimer</h1>
+          </div>
+          <p class="text-center">
+            This thread is not financial or legal advice in any shape or form, nor do I recommend anyone to buy, sell, or trade any cryptocurrencies. Do your own research before engaging in such activities. The script used in this thread is not a profitable one for low time frames or while applied with high leverage; let me be crystal ****ing clear about this. I chose this script due to its absurd backtesting results on higher time frames as a clear example for this thread. All scripts require a hefty amount of backtesting and continuous maintenance; there is no "get rich quick" -scheme here. You will learn: "How to set up a trading bot in the cloud using TradingView, Webhooks and Binance API". 
+            <br>
+            </div>
+            <br>
+            <div class="col-md-8 col-md-offset-2 section-container-spacer">
+            <div class="row">
+            <div class="col-xs-12 col-md-12">
+            <br>
+            <p align="center">The most sophisticated Charting Tool for Investors & Traders</p>
+            <h3 align="center"><a href="https://www.tradingview.com/gopro/?share_your_love=t3chn1ne/" target="_blank"><b>TradingView (30-day Free Trial)</b></a>
+              <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer-container text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>© Web3 Threads | Documentation</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     navActivePage();
+  });
+</script>
+<script type="text/javascript" src="./main.70a66962.js"></script></body>
+
+</html>
